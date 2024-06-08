@@ -1,3 +1,145 @@
 :root {
+    /* Primary */
+
+    --magenta-muito-escuro: hsl(300, 43%, 22%);
+    --rosa-suave: hsl(333, 80%, 67%);
+
+    /* Neutra(o) */
+
+    --magenta-acinzentado-escuro: hsl(303, 10%, 53%);
+    --magenta-acinzentado-claro: hsl(300, 24%, 96%);
+    --branco: hsl(0, 0%, 100%);
+
+    /* FONTE */
+
+    --fonte-principal: "League Spartan", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 15px;
+    font-family: var(--fonte-principal);
+    background: url(images/bg-pattern-top-desktop.svg) no-repeat;
+    background-size: 32%;
+}
+
+.intro-reviews {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.intro-reviews section h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    width: 50%;
+    color: var(--magenta-muito-escuro);
+}
+
+.intro-reviews section p {
+    color: var(--magenta-muito-escuro);
+    font-weight: 400;
+    width: 62%;
+    line-height: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.assessment {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.assessment-stars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1em;
+    background-color: var(--magenta-acinzentado-claro);
+    width: 350px;
+    border-radius: 8px;
+}
+
+.assessment .assessment-stars span {
+    color: var(--magenta-muito-escuro);
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.assessment-alignment01 {
+    margin-left: 40px;
+}
+
+.assessment-alignment02 {
+    margin-left: 80px;
+}
+
+.buyers-comments {
+    display: grid;
+    grid-template-columns: 26.6% 26.6% 26.6%;
     
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.artigo__buyers-comments {
+    background-color: var(--magenta-muito-escuro);
+    color: var(--branco);
+    padding: 1.5em 1.5em;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    width: 280px;
+    height: 150px;
+}
+
+.buyers-comments .artigo__buyers-comments div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.buyers-comments .artigo__buyers-comments div img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.buyers-comments .artigo__buyers-comments div .buyers-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.nome__buyers-profile {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.buyer__profile-verification {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--rosa-suave);
+}
+
+.buyers-comments .artigo__buyers-comments p {
+    padding-top: 1.2rem;
+    line-height: 1.3rem;
+    padding-right: 1rem;
+    text-align: justify;
+}
+
+.buyers-comments-alignment01 {
+    margin-top: 40px;
+}
+
+.buyers-comments-alignment02 {
+    margin-top: 60px;
 }
