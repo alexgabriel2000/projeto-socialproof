@@ -1,0 +1,37 @@
+:root {
+    --font-principal: "League Spartan", serif;
+
+    /* Cores */
+
+    --magenta-muito-escuro: hsl(300, 43%, 22%);
+    --magenta-acinzentado-escuro: hsl(303, 10%, 53%);
+    --magenta-acinzentado-claro: hsl(300, 24%, 96%);
+    --rosa-suave: hsl(333, 80%, 67%);
+    --branco: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: 15px;
+}
+
+/* Seção serviços */
+
+.section__services {
+
+}
+
+.services__title {
+    color: var(--magenta-muito-escuro);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.services__text {
+    color: var(--magenta-acinzentado-escuro);
+    
+}
