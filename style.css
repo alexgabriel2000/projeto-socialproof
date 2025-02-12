@@ -54,6 +54,9 @@ body {
 /* Seção Avaliação */
 
 .section__avaliacao {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     width: 50%;
     padding-top: 35px;
 }
@@ -64,38 +67,36 @@ body {
     gap: 14px;
 }
 
-.avaliacao__items {
+
+.avaliacao__list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: 320px;
-    padding: 10px 0 10px 25px;
+    gap: 25px;
+
+    width: 400px;
+    height: 40px;
+
     border-radius: 5px;
+
     font-size: 14px;
     font-weight: bold;
+
     color: var(--magenta-muito-escuro);
     background-color: var(--magenta-acinzentado-claro);
 }
 
-.avaliacao__items img {
-    height: 14px;
-}
-
-.avaliacao__items-img {
+.avaliacao__img {
     display: flex;
-    
+    gap: 10px;
 }
 
-.teste01 {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.avaliacao__items-align01 {
+.avaliacao__img-align01 {
     margin-left: 40px;
 }
 
-.avaliacao__items-align02 {
+.avaliacao__img-align02 {
     margin-left: 80px;
 }
+
