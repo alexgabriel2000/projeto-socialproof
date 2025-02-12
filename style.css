@@ -19,19 +19,83 @@ body {
     font-size: 15px;
 }
 
+.services__avaliacao-flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
 /* Seção serviços */
 
 .section__services {
-
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 50%;
+    gap: 16px;
 }
 
 .services__title {
     color: var(--magenta-muito-escuro);
     font-size: 2.5rem;
     font-weight: bold;
+    width: 52%;
 }
 
 .services__text {
     color: var(--magenta-acinzentado-escuro);
+    width: 52%;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+
+/* Seção Avaliação */
+
+.section__avaliacao {
+    width: 50%;
+    padding-top: 35px;
+}
+
+.avaliacao__list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.avaliacao__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 320px;
+    padding: 10px 0 10px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--magenta-muito-escuro);
+    background-color: var(--magenta-acinzentado-claro);
+}
+
+.avaliacao__items img {
+    height: 14px;
+}
+
+.avaliacao__items-img {
+    display: flex;
     
+}
+
+.teste01 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avaliacao__items-align01 {
+    margin-left: 40px;
+}
+
+.avaliacao__items-align02 {
+    margin-left: 80px;
 }
